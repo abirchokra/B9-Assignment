@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B9-Assignment</title>
+    <link rel="stylesheet" href="style/styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.11/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header class="w-10/12 mx-auto my-4">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                    <a href=""><img class="md:w-[120px]" src="images/logo.png" alt=""></a>
+                </div>
+                <div class="space-x-3 mr-3 items-center">
+                    <div class="border border-gray-200 rounded-full bg-gray-200 p-2"><img class="w-6 h-6"
+                            src="https://img.icons8.com/?size=50&id=73&format=png" alt=""></div>
+                    <div class="border border-gray-200 rounded-full bg-gray-200 p-2"><img class="w-6 h-6"
+                            src="https://img.icons8.com/?size=50&id=49&format=png" alt=""></div>
+                    <div class="border border-gray-200 rounded-full bg-gray-200 p-2"><img class="w-6 h-6"
+                            src="https://img.icons8.com/?size=50&id=24717&format=png" alt=""></div>
+                    <div class="border border-gray-200 rounded-full bg-gray-200 p-2"><img class="w-6 h-6"
+                            src="https://img.icons8.com/?size=50&id=2754&format=png" alt=""></div>
+                </div>
+                <div>
+                    <button class="btn btn-primary rounded-full md:w-[160px] hover:bg-purple-50 text-black ">Sign
+                        Up</button>
+                </div>
+
+            </div>
+
+
+        </nav>
+
+
+
+    </header>
+
+    <main class="w-11/12 mx-auto my-4">
+        <!-- banner -->
+        <section
+            class="banner mx-auto rounded-3xl md:flex justify-center items-center gap-6 w-11/12 h-[600px] p-4  md:p-0 ">
+
+            <div class="space-y-5 ">
+                <h1 class="text-4xl md:text-8xl text-white font-bold">Welcome to the <br> <span
+                        class="bg-gradient-to-r from-red-600 to-gray-600 text-transparent bg-clip-text">ReTro</span>
+                    Forum</h1>
+                <p class="text-white">Share your favorite opinion and win and wp <br> forum coffee mug!</p>
+                <div class="relative">
+                    <input id="banner-input" class="w-[350px] rounded-2xl p-2 outline-none" type="text"
+                        placeholder="Search here anything">
+                    <button onclick="handleSearchByCategory()" id="banner-btn"
+                        class="absolute text-center bg-purple-500 w-[100px] p-2 rounded-xl left-64 text-white">Search</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl md:w-[240px] md:h-[160px] flex flex-col justify-center">
+                <div class="flex justify-between gap-4 px-3">
+                    <h3>Resitered Users</h3>
+                    <h3>01</h3>
+                </div>
+                <div class="flex justify-between gap-4 px-3">
+                    <h3>Forum</h3>
+                    <h3>05</h3>
+                </div>
+                <div class="flex justify-between gap-4 px-3">
+                    <h3>Topics</h3>
+                    <h3>01</h3>
+                </div>
+                <div class="flex justify-between gap-4 px-3">
+                    <h3>Replies</h3>
+                    <h3>01</h3>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- discuss -->
+
+        <section class="my-4">
+            <div class="flex flex-col items-center space-y-4 text-center ">
+                <h1 class="text-5xl font-bold">Let's Discuss</h1>
+                <p class="text-[rgba(18,19,45,0.6)]">Yes, you can run unit tests and view the results directly within
+                    the app. <br> The integrated testing
+                    features allow for a streamlined .</p>
+            </div>
+
+            <section class="md:flex justify-center gap-8 my-4 space-y-4 md:space-y-0">
+                <!-- discuss left -->
+                <div id="post-container" class="space-y-3">
+                 
+                </div>
+                <!-- discuss right -->
+
+                <div id="markAsReadContainer" class="bg-gray-100 h-full  rounded-2xl space-y-4">
+                    <div class="flex gap-4 justify-between p-4">
+                        <h2 class="font-bold text-2xl">Title</h2>
+                        <p class="flex gap-1">
+                            <img class="w-[20px]" src="https://img.icons8.com/?size=80&id=91955&format=png" alt="">
+                            Mark as read (<span id="mark-count">0</span>)
+                        </p>
+    
+                        
+    
+                      
+                    </div>
+                 
+
+                </div>
+            </section>
+
+
+
+        </section>
+
+        <!-- join -->
+
+        <section class="container mx-auto lg:w-10/12 w-11/12 my-8 lg:my-12">
+            <div
+                class="lg:p-16 rounded-3xl *:text-white bg-[#12132D] p-6 flex flex-col-reverse lg:flex-row justify-center items-center gap-8">
+                <div class="lg:space-y-8 space-y-5 lg:w-7/12">
+                    <h2 class="font-extrabold text-2xl lg:text-4xl">Join Our Forum</h2>
+                    <p class="opacity-60">
+                        Dont forget to share your unforgettable moments with us and also
+                        dont forget to join our forum to get the latest news and updates.
+                    </p>
+                    <button
+                        class="btn bg-primary text-white font-extrabold rounded-full border-none lg:px-16 lg:btn-lg hover:bg-white hover:text-primary">
+                        Register Now
+                    </button>
+                </div>
+                <div class="lg:w-5/12 flex justify-end">
+                    <img src="./images/joinforum.png" alt="form image" />
+                </div>
+            </div>
+        </section>
+
+        <!-- latest post section -->
+        <section class="container mx-auto lg:w-10/12 w-11/12 *:text-center lg:my-18 my-8">
+            <div class="flex lg:w-2/5 mx-auto flex-col items-center justify-center p-4 space-y-4">
+                <h2 class="font-extrabold text-2xl lg:text-5xl">Latest Posts</h2>
+                <p class="opacity-60">
+                    Got mind blowing ideas? Share with us and get the latest updates and
+                    news too from our forum.
+                </p>
+            </div>
+
+            <div id="latest-post-container" class="md:flex md:space-x-6 space-y-3 md:space-y-0 ml-[-10px] md:ml-0">
+                
+            </div>
+        </section>
+    </main>
+    <footer class="footer p-11">
+        <div class="flex flex-col justify-center items-center mx-auto text-center space-y-4">
+            <h1 class="font-bold text-5xl">ReTro</h1>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots <br> in a piece of
+                classical Latin literature from 45 BC</p>
+            <div class="flex gap-4">
+                <img src="https://img.icons8.com/?size=30&id=62856&format=png" alt="">
+                <img src="https://img.icons8.com/?size=30&id=118466&format=png" alt="">
+                <img src="https://img.icons8.com/?size=30&id=59813&format=png" alt="">
+                <img src="https://img.icons8.com/?size=30&id=60014&format=png" alt="">
+            </div>
+            <hr class="border border-gray-200 md:w-[1200px]">
+
+            <p>2017, All Rights Reserved.</p>
+
+        </div>
+
+
+
+
+
+
+
+    </footer>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/practice.js"></script> -->
+</body>
+
+</html>
+

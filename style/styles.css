@@ -1,0 +1,12 @@
+.banner{
+    background-image: url('../images/bgbanner.png');
+    background-color: rgb(18, 19, 45);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.footer{
+    background:  linear-gradient(180.00deg, rgba(18, 19, 45, 0.05),rgba(18, 19, 45, 0) 100%);
+}
